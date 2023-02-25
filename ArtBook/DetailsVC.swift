@@ -15,9 +15,24 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var artistText: UITextField!
     @IBOutlet weak var yearText: UITextField!
     
+    var chosenPainting = ""
+    var chosenPaintingID : UUID?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        if chosenPainting != "" {
+            //core data
+            
+            
+            
+        } else {
+            nameText.text = ""
+            artistText.text = ""
+            yearText.text = ""
+        }
         
         
         //Recognizers
